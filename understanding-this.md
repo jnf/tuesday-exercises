@@ -79,4 +79,5 @@ Hey, remember jQuery? Here's a thing:
 ### Keywords for further reading
 - `bind()`, `apply()`, and `call()`
 - Javascript callback pattern (used heavily in Node)
+- Method "borrowing" between objects
 
