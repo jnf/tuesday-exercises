@@ -57,6 +57,26 @@ Here's an example showing how invocation can affect context:
   var aprilBudget = budget.forRecords.apply(responsibleBudget, ['April']);
 ```
 ##### So what's going on here?
-- What code is executed when these lines are executed?
+- What code is called when these lines are executed?
 - What's the value of `this` in the forRecords() method on execution?
 - What are the final values of `marchBudget` and `aprilBudget`?
+
+## Another example of managing contexts with `this`
+
+Hey, remember jQuery? Here's a thing:
+
+```javascript
+  var buttonMasher = function() {
+    $(this).addClass('mashed');
+  }
+
+  $('button').on('click', buttonMasher);
+```
+##### So what's going on here?
+- What's the value of `this` in the buttonMasher function? Why?
+- What is jQuery doing behind the scenes?
+
+### Keywords for further reading
+- `bind()`, `apply()`, and `call()`
+- Javascript callback pattern (used heavily in Node)
+
