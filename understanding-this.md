@@ -53,7 +53,7 @@ Here's an example showing how invocation can affect context:
   // apply()'s first argument is the contextual object.
   // the second argument is an array whose contents are
   // fed to the called method (forRecords in this example)
-  var marchBudget = budget.forRecords.apply(responsibleBudget, ['March']);
+  var marchBudget = budget.forRecords.call(responsibleBudget, 'March');
   var aprilBudget = budget.forRecords.apply(responsibleBudget, ['April']);
 ```
 ##### So what's going on here?
