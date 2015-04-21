@@ -37,7 +37,7 @@ In the preceding code, we could absolutely say `return budget.records * budget.r
 
 ## `this` does not exist until the function is _invoked_.
 
-I shamelessly stole (and lightly edited) this sentence from [Javascript Is Sexy](http://javascriptissexy.com/understand-javascripts-this-with-clarity-and-master-it/) blog. It's a good sentence (emphasis mine):
+I shamelessly stole (and lightly edited) this sentence from the poorly named [Javascript Is Sexy](http://javascriptissexy.com/understand-javascripts-this-with-clarity-and-master-it/) blog. It's a good sentence (emphasis mine):
 
 > Even though it _appears_ `this` refers to the object where it is defined, it is not until an object invokes the function that `this` is actually assigned a value. And the value it is assigned is based __exclusively__ on the object that invokes the this Function.
 
