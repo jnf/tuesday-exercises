@@ -50,9 +50,8 @@ Here's an example showing how invocation can affect context:
     records: 20
   }
 
-  // apply()'s first argument is the contextual object.
-  // the second argument is an array whose contents are
-  // fed to the called method (forRecords in this example)
+  // the first argument of both apply() and bind() is the contextual object.
+  // they vary by how they pass arguments to the invoked function
   var marchBudget = budget.forRecords.call(responsibleBudget, 'March');
   var aprilBudget = budget.forRecords.apply(responsibleBudget, ['April']);
 ```
